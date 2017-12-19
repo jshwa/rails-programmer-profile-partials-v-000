@@ -11,8 +11,9 @@
   </div>
 
   <div class="col-md-9 programmer-info">
-
+    <p>
     <%= render partial: "attribute", collection: @programmer, locals: {attributes: @programmer.attributes} %>
+    </p>
     <p>
     <strong>Home Country:</strong> <%= @programmer.home_country %><br>
     </p>
