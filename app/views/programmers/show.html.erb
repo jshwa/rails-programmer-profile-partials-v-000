@@ -11,7 +11,7 @@
   </div>
 
   <div class="col-md-9 programmer-info">
-    <% @programmer.attributes[5..7].each do |attribute| %>
+    <% @programmer.attributes[1..2].each do |attribute| %>
     <p>
     <%= render partial: 'attribute', locals: {title: attribute[0], value: attribute[1]} %>
     </p>
