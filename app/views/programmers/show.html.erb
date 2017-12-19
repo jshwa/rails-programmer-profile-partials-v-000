@@ -11,11 +11,11 @@
   </div>
 
   <div class="col-md-9 programmer-info">
-    <%= raise @programmer.attributes.inspect %>
-    <% display_attributes = @programmer.attributes[5..7] %>
-    <%  @programmer.attributes.each do |attribute| %>
+
     <p>
-    <%= render partial: 'attribute', locals: {title: attribute[0], value: attribute[1]} %>
+    <%= render partial: 'attribute', locals: {title: home_country value: @programmer.home_country} %>
+    <%= render partial: 'attribute', locals: {title: quote value: @programmer.quote} %>
+    <%= render partial: 'attribute', locals: {title: claim_to_fame value: @programmer.claim_to_fame} %>
     </p>
 
     <% end %>
