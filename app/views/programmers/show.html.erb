@@ -12,7 +12,7 @@
 
   <div class="col-md-9 programmer-info">
     <p>
-    <%= render :partial => "programmer", :collection => @programmer, :locals => {:programmer => @programmer} %>
+    <%= render partial: 'attribute', locals: {title: 'home_country', value: @programmer.home_country} %>
     </p>
     <p>
     <strong>Home Country:</strong> <%= @programmer.home_country %><br>
