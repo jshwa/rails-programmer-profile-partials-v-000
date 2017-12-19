@@ -13,7 +13,7 @@
   <div class="col-md-9 programmer-info">
     <% @programmer.attributes.each do |attribute| %>
     <p>
-    <%= render partial: 'attribute', locals: {title: 'home_country', value: attribute %>
+    <%= render partial: 'attribute', locals: {title: attribute[0], value: attribute[1] %>
     </p>
     <p>
     <strong>Home Country:</strong> <%= @programmer.home_country %><br>
